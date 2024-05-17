@@ -1,0 +1,19 @@
+Task 2/4:
+
+Description
+
+It's bill time! Let's split the bill among everyone and update the values in the dictionary you have created in the previous stage.
+
+Since we don't want to deal with too many decimals (who carries that much change anyway?), round the split amount to two decimal places and then update the dictionary with the split values.
+Objectives
+
+In this stage your program should perform the following steps together with the steps of the previous stage:
+
+    If there are no people to split the bill (the number of friends is 0 or an invalid input), output "No one is joining for the party";
+    Else, take user input: the final bill;
+    Split the total bill equally among everyone;
+    Round the split value to two decimal places;
+    Update the dictionary with the split values;
+    Print the updated dictionary.
+
+Do not print the output of the previous stage (see examples).
