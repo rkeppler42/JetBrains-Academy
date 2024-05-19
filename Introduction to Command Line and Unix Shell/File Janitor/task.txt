@@ -10,3 +10,16 @@ In this stage, write a Bash script that outputs two lines of text with a descrip
 
     The first line must contain the words File Janitor, which is our script's name, and the year of its creation;
     The second line must contain the words Powered by Bash to indicate that our script is a Bash script. Do not forget to add the path to the script interpreter at the beginning of the script!
+
+Stage 2/5
+
+Description
+
+We are writing a sophisticated script with multiple options, so it would be a good idea to add some reference so that users can learn how to use it. For this, add the option to display the help section! To avoid the clutter, place the help information in a separate file and display it on demand.
+
+As you already know, there are some utilities to display the content of a file, and you may choose any of them. However, make sure you output the whole content of the help file, not just a couple of lines.
+Objectives
+
+    Modify the script so that if it is executed with the help option, it displays the content of the available help file in addition to the information about itself. You do not need to create the help file yourself, it already exists in the same directory where the script is and has the name file-janitor-help.txt;
+    If the script is executed without any option or if the option is not help, the script must simply display the information about itself like in the previous stage.
+

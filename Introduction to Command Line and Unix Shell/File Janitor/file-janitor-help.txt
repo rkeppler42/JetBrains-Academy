@@ -1,0 +1,6 @@
+File Janitor is a tool to discover files and clean directories
+
+Usage: file-janitor [option] [file_path]
+
+    options:
+        help        displays this help file
