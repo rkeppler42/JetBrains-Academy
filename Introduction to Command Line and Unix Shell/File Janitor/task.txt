@@ -1,0 +1,12 @@
+Stage 1/5
+
+Description
+As a confident Linux command-line user, you may write plenty of scripts for different useful things. These scripts can run silently or output some information in the process of execution. In this project, we are going to write a user-friendly script that will help discover certain files in a directory specified by the user, clean them up, and report to the user.
+
+To begin with, let's teach the script to output information about itself!
+Objectives
+
+In this stage, write a Bash script that outputs two lines of text with a description of the script:
+
+    The first line must contain the words File Janitor, which is our script's name, and the year of its creation;
+    The second line must contain the words Powered by Bash to indicate that our script is a Bash script. Do not forget to add the path to the script interpreter at the beginning of the script!
