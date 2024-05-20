@@ -1,3 +1,23 @@
+Task 1/4:
+
+Description
+
+You have planned a dinner with your friends today. It's the right time to add them to your program. You need to be sure how many friends are joining you for dinner including you.
+
+The idea is to take names from user input. Store them in a dictionary.
+
+For example, if five friends are joining including you, you need to add five people to the dictionary so that you can access/update the corresponding bill value later.
+Objectives
+
+In this stage your program should perform the following steps:
+
+    Take user input — how many people want to join, including the user;
+    In case of an invalid number of people (zero or negative), "No one is joining for the party" is expected as an output;
+    Otherwise, take the friends' names as input, iteratively;
+    Store them in a dictionary initialized with zeros;
+    Print out the dictionary.
+
+
 Task 2/4:
 
 Description
@@ -15,5 +35,27 @@ In this stage your program should perform the following steps together with the 
     Round the split value to two decimal places;
     Update the dictionary with the split values;
     Print the updated dictionary.
+
+Do not print the output of the previous stage (see examples).
+
+
+Task 3/4:
+
+Description
+
+In this stage, you need to add a new feature to the project — pick one name from the dictionary at random; this person's share will be paid by others. Make it a lucky day for somebody!
+
+Make sure you give your users a choice whether they want to use this feature or not. Don't turn it on by default.
+
+After picking a random name, print it so that everyone knows who is the lucky one.
+Objectives
+
+In this stage your program should perform the following steps together with the steps from the previous stages:
+
+    In case of an invalid number of people, "No one is joining for the party" is expected as an output;
+    Otherwise, ask the user whether they want to use the "Who is lucky?" feature;
+    Take input from the user;
+    If a user wants to use the feature (Yes), choose a name from the dictionary keys at random and print the following: {Name} is the lucky one!;
+    If the user enters anything else, print No one is going to be lucky.
 
 Do not print the output of the previous stage (see examples).

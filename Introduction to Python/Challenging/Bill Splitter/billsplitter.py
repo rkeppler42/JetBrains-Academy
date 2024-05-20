@@ -1,21 +1,39 @@
-n = input("Enter the number of friends joining (including you):")
-dict_of_friends = {}
+import random
 
-try:
-    n = int(n)
-    if n <= 0:
-        raise Exception
 
-    print("Enter the name of every friend (including you), each on a new line:")
+def main():
+    n = input("Enter the number of friends joining (including you):")
+    try:
+        n = int(n)
+        if n <= 0:
+            raise Exception
+        friends(n)
+    except (ValueError, Exception):
+        print("No one is joining for the party")
+
+
+def friends(n):
+    friend_lst = []
     for _ in range(n):
-        dict_of_friends[input()] = 0
-    total_bill = float(input("Enter the total bill value:"))
-    for key in dict_of_friends:
-        dict_of_friends[key] = round(total_bill / n, 2)
+        friend_lst.append(input())
+    total_bill = float(input("Enter the total bill value:\n"))
+    lucky = input('Do you want to use the "Who is lucky?" feature? Write Yes/No:\n')
+    if lucky == "Yes":
+        lucky_friend(friend_lst, total_bill)
+    else:
+        no_lucky_friend(friend_lst, total_bill)
 
-    print(dict_of_friends)
 
-except (ValueError, Exception):
-    print("No one is joining for the party")
+def lucky_friend(friends_lst, bill):
+    lucky_one = random.choice(friends_lst)
+    print(f"{lucky_one} is the lucky one!")
+
+
+def no_lucky_friend(friends_lst, bill):
+    print("No one is going to be lucky")
+
+
+main()
+
 
 
