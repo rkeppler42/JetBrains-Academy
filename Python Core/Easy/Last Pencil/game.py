@@ -54,10 +54,10 @@ def n_of_pencils() -> int:
     return pencils
 
 
-def lst_game_order():
+def lst_game_order() -> list:
     """
     Function that determines the first player to play and returns a list of the order of play.
-    :return: lst - of the order of play, where list[0] = first_player
+    :return: list - of the order of play, where list[0] = first_player
     """
     print("Who will be the first (John, Jack):")
     while True:
@@ -115,11 +115,11 @@ def gameplay(pencils, game_order):
         print(f"{game_order[loop % 2]}'s turn:")
 
 
-def bot(pencils):
+def bot(pencils) -> int:
     """
     Function that will control the bot.
     :param pencils: int - number of pencils that are still on the table.
-    :return: number of pencils that the bot will take from the table.
+    :return: int - number of pencils that the bot will take from the table.
     """
     if pencils % 4 == 1:
         random_pick = random.randint(1, 3)
