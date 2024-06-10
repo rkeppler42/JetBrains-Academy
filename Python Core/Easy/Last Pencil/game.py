@@ -118,6 +118,8 @@ def gameplay(pencils, game_order):
 def bot(pencils):
     """
     Function that will control the bot.
+    :param pencils: int - number of pencils that are still on the table.
+    :return: number of pencils that the bot will take from the table.
     """
     if pencils % 4 == 1:
         random_pick = random.randint(1, 3)
